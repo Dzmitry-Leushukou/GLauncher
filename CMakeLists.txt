@@ -24,6 +24,8 @@ add_executable(Launcher main.cpp
         Data/Account.h
         Services/Decipherer.cpp
         Services/Decipherer.h
+        Data/Game.cpp
+        Data/Game.h
 )
 target_link_libraries(Launcher
         Qt::Core
