@@ -20,6 +20,10 @@ add_executable(Launcher main.cpp
         UI/ui.cpp
         UI/ui.h
         UI/ui.ui
+        Data/Account.cpp
+        Data/Account.h
+        Services/Decipherer.cpp
+        Services/Decipherer.h
 )
 target_link_libraries(Launcher
         Qt::Core
