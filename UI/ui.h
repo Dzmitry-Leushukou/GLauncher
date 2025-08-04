@@ -6,7 +6,9 @@
 #define UI_H
 
 #include <QMainWindow>
-
+#include <stdexcept>
+#include "../Services/DBService.h"
+#include "../Services/Logger.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class UI; }
@@ -21,6 +23,8 @@ public:
 
 private:
     Ui::UI *ui;
+
+    void initComponents();
 };
 
 
