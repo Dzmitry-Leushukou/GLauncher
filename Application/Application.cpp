@@ -1,5 +1,12 @@
 #include "Application.h"
 
+Application::Application(const int& tabId) {
+    choosedTab = tabId;
+}
+
+void Application::changeTab(const int& newTabId) {
+    choosedTab = newTabId;
+}
 
 void Application::initComponents()
 {

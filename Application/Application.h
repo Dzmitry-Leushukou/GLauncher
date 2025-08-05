@@ -7,10 +7,12 @@
 class Application
 {
     public:
-    Application() = default;
-    ~Application() = default;
-    void initComponents();
+    explicit Application(const int& tabId);
+    static void initComponents();
+    void changeTab(const int& newTabId);
     private:
+    int choosedTab;
+
 };
 
 
