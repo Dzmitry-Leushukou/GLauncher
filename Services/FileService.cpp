@@ -15,7 +15,7 @@ std::vector<std::string> FileService::readFile(const std::string& filePath) {
     return lines;
 }
 
-void FileService::addLineToFile(const std::string& line,const std::string& filePath)
+void FileService::addLineToFile(const QString& line,const std::string& filePath)
 {
 
 }

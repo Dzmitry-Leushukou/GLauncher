@@ -5,11 +5,11 @@
 #include "Logger.h"
 
 std::string Logger::path;
-void Logger::addLog(const std::string &log)
+void Logger::addLog(const QString &log)
 {
-    std::string dateTimeNow;
-    std::string appTime;
-    std::string line="["+dateTimeNow+"("+appTime+")] "+log+"\n";
+    QString dateTimeNow;
+    QString appTime;
+    QString line="["+dateTimeNow+"("+appTime+")] "+log+"\n";
     FileService::addLineToFile(line,path);
 }
 
